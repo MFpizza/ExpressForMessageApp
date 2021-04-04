@@ -1,0 +1,22 @@
+{
+  "name": "smallexpressbackend",
+  "version": "1.0.0",
+  "description": "forMyMessageFlutterApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MFpizza/ExpressForMessageApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MFpizza/ExpressForMessageApp/issues"
+  },
+  "homepage": "https://github.com/MFpizza/ExpressForMessageApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
