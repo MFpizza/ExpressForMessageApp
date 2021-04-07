@@ -1,14 +1,18 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-export const MessageSchema = new mongoose.Schema(
-  {
-    toWho:{
-        type:String,
-        required:true
+export const MessageSchema = new mongoose.Schema({
+  team: [
+    {
+      member: {
+        type: String,
+        required: true,
+      },
     },
-    message:{
-        type:String,
-        required:true
-    }
-  }
-);
+  ],
+  messageList: [
+    {
+      message: { type: String, required: true },
+      whoSend: { type: String, required: true },
+    },
+  ],
+});

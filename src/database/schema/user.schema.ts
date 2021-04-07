@@ -30,5 +30,8 @@ export const UserSchema = new mongoose.Schema(
     friend:[
       {account:{type:String}}
     ],
+    chatRoom:[
+      { roomId:{type:String, required: true}}
+    ]
   }
 );
