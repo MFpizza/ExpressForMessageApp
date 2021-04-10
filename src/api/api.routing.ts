@@ -4,8 +4,10 @@ import { UserModel } from "../database/models/user";
 import { QueryFindOneAndUpdateOptions } from 'mongoose';
 const router = express.Router();
 import userRoute from './user/user.routing';
+import MessageRoute from './message/message.routing';
 
 router.use('/user/',userRoute);
+router.use('/message/',MessageRoute);
 
 router.get("/test", express.json(), (req, res, next) => {
   res.send(JSON.stringify(req.body));

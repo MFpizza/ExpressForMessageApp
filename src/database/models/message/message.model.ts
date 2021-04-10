@@ -1,4 +1,4 @@
 import mongoose from 'mongoose';
 import { MessageSchema } from '../../schema/message.schema';
 
-export const MessageModel = mongoose.model('User', MessageSchema);
+export const MessageModel = mongoose.model('Message', MessageSchema);
