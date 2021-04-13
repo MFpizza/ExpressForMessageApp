@@ -31,7 +31,12 @@ export const UserSchema = new mongoose.Schema(
       {account:{type:String}}
     ],
     chatRoom:[
-      { roomId:{type:String, required: true}}
+      { 
+        roomId:{type:String, required: true},
+        // time:{type:Date, required: true},
+        lastMessage:{type:String},
+        roomName:{type:String,required:true}
+      }
     ]
   }
 );

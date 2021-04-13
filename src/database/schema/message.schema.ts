@@ -9,10 +9,13 @@ export const MessageSchema = new mongoose.Schema({
       },
     },
   ],
+  chatRoomName:{ type: String, required: true},
+  // RoomImage:{ type: String, required: false},
   messageList: [
     {
       message: { type: String, required: true },
-      whoSend: { type: String, required: true },
+      SendingAccount: { type: String, required: true },
+      time:{ type: Date, required: true }
     },
-  ],
+  ], 
 });
